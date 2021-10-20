@@ -21,11 +21,11 @@ class Turtle {
 //		public void swim() {
 //			System.out.println("I'm a natural swimmer");
 //		public Turtle getObject() {
-	
-		Turtle() {
-			this.shellColour = shellColour;
-		}
 		
-	}
+}
+//
+//		Turtle Lastoise = new Turtle();
+//		this.shellColour = shellColour;
+	
 
 
