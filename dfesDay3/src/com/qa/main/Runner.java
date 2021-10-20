@@ -6,7 +6,8 @@ public class Runner {
 		//Task_1.ifElse();
 		//FizzBuzz.fuzzy(1);
 		//Task_2.moneyLoop();
-		Task_2_Extension.walletLoop();
+		//Task_2_Extension.walletLoop();
+		Flowcharts.flowA2();
 		
 
 	}
