@@ -35,9 +35,7 @@ public class ArrayList_CRUDTask {
 		
 		public static void moveOrder(int index) {
 			
-			System.out.println(orders);
-			
-			orders.add(null);
+			doneOrders.add(null);
 		}
 		
 		public static void removeOrder(int index) {
