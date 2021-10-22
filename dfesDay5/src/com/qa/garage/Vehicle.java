@@ -61,6 +61,14 @@ public class Vehicle {
 		this.needsRepairs = needsRepairs;
 	}
 	
+	//Constructors
+	
+	public Vehicle(int numberOfSeats, int wheelCount, String colour, boolean needsRepairs) {
+		super();
+		this.numberOfSeats = numberOfSeats;
+		this.wheelCount = wheelCount;
+	}
+	
 	//public static ArrayList<Vehicle>  = new ArrayList<>();
 
 	
