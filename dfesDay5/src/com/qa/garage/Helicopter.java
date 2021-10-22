@@ -8,8 +8,8 @@ public class Helicopter extends Vehicle{
 	// Method   
 	public int fixVehicleCost() {
 	  
-		if(needsRepairs == true) {
-			return 500 * (numberOfSeats + wheelCount);
+		if(hasCockpit == true) {
+			return fixVehicleCost();
 	  } else {
 		  	return 0;
 	  }

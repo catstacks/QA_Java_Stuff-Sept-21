@@ -6,10 +6,10 @@ public class Car extends Vehicle{
 	private int mphSpeed;
 	
 	// Method   
-	public int fixVehicleCost() {
+	public int fixCarVehicleCost() {
 	  
-		if(needsRepairs == true) {
-			return 500 * (numberOfSeats + wheelCount);
+		if(isRareCollectible == false) {
+			return fixVehicleCost();
 	  } else {
 		  	return 0;
 	  }

@@ -8,8 +8,8 @@ public class Ship extends Vehicle{
 	// Method   
 	public int fixVehicleCost() {
 	  
-		if(needsRepairs == true && hasPirates == false) {
-			return 500 * (numberOfSeats + wheelCount);
+		if(isSunken == false && hasPirates == false) {
+			return fixVehicleCost();
 	  } else {
 		  	return 0;
 	  }

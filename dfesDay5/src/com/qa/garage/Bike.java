@@ -8,8 +8,8 @@ public class Bike extends Vehicle{
 	// Method   
 	public int fixVehicleCost() {
 	  
-		if(needsRepairs == true) {
-			return 500 * (numberOfSeats + wheelCount);
+		if(age >= 100) {
+			return fixVehicleCost();
 	  } else {
 		  	return 0;
 	  }
