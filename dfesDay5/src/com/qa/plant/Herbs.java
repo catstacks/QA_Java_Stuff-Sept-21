@@ -1,9 +1,7 @@
-package com.qa.main;
+package com.qa.plant;
 
 public class Herbs extends Plants {
 	
-	
-		
 		// Fields 
 		private String flavour; 
 		private boolean isPoisonous;
@@ -13,11 +11,6 @@ public class Herbs extends Plants {
 			System.out.println("I fill you with hope because I taste good.");
 		}
 		
-		@Override // Good practice to let developers know you are overriding a method
-		public void sway() {
-			System.out.println("Each leaf is gently swaying...");
-		}
-
 		// Getters and Setters
 		public String getflavour() {
 			return flavour;
@@ -40,10 +33,7 @@ public class Herbs extends Plants {
 			this.flavour = flavour;
 			this.isPoisonous = isPoisonous;
 		}
-		
-		
-		
-		
+					
 
 	}
 

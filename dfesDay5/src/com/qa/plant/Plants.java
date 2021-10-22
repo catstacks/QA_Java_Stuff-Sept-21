@@ -1,4 +1,4 @@
-package com.qa.main;
+package com.qa.plant;
 
 public class Plants {
 	

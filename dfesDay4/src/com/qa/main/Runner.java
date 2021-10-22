@@ -12,11 +12,7 @@ public class Runner {
 				System.out.println(housePlant.hasBugTenants);
 				housePlant.photosynthesise();
 				
-//				FlightLessBirds kiwi = new FlightLessBirds("Brown", 3, false, "Forest", 12);
-//				kiwi.makeNoise();
-//				kiwi.attemptToFly();
-//				
-//				System.out.println(kiwi.getFeatherColour());
+
 
 	}
 
