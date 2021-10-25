@@ -8,7 +8,7 @@ public class Bike extends Vehicle{
 	// Method   
 	public int fixVehicleCost() {
 	  
-		if(age >= 100) {
+		if(age <= 100) {
 			return fixVehicleCost();
 	  } else {
 		  	return 0;
