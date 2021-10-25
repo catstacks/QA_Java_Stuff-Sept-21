@@ -65,6 +65,9 @@ public class Vehicle {
 		super();
 		this.numberOfSeats = numberOfSeats;
 		this.wheelCount = wheelCount;
+		this.colour = colour;
+		this.needsRepairs = needsRepairs;
+				
 	}
 	
 }

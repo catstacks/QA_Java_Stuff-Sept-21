@@ -13,6 +13,8 @@ public class Runner {
 //		System.out.println(rosemary.getflavour());
 
 		Car ferrari = new Car(4, 4, "red", false, false, 200);
+		
+		
 	}
 
 }

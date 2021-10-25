@@ -4,48 +4,37 @@ import java.util.ArrayList;
 
 public class Garage {
 
-	public static void main(String[] args) {
 		
-		public static ArrayList<Vehicle> addVehicle = new ArrayList<>();
+		public static ArrayList<Vehicle> garage = new ArrayList<>();
 
 		
-		public static void addVehicle(Vehicle newVehicle) {		
-			addVehicle.add();
+		public void addVehicle(Vehicle newVehicle) {		
+			garage.add(newVehicle);
 		
-		//}
+		}
 		
-		//public static void removeVehicle(int index) {
+		public void removeVehicle(int index) {
 			
-			//arrayname.add(null);
-		//}
+			garage.remove(index);
+		}
 		
-		//public static void updateVehicle(int index, String newOrder) {
+		public void updateVehicle(int index, Vehicle newVehicle) {
 		
-		//System.out.println(orders);
+			garage.set(index, newVehicle);
+		}
 		
-		//orders.add(null);
-	//}
+		public Vehicle readVehicle(int index) {
 		
-		//public static void readVehicle(int index, String newOrder) {
+			return garage.get(index);
 		
-		//System.out.println(orders);
+		}
 		
-		//orders.add(null);
-	//}
-		
-		//public static void removeAllVehicle(int index) {
+		public void emptyGarage() {
 			
-			//System.out.println(orders);
-			
-			//orders.add(null);
-		//}
+			garage.clear();
+		}
 		
-
-	//}
-
 	}
-
-}
 
 //The task is to create a garage class with methods for the following:
 //- Adding Vehicles to garage
