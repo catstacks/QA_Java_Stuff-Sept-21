@@ -1,6 +1,6 @@
 package com.qa.main;
 
-import com.qa.plant.*;
+//import com.qa.plant.*;
 import com.qa.garage.*;
 
 public class Runner {
@@ -12,7 +12,8 @@ public class Runner {
 //		
 //		System.out.println(rosemary.getflavour());
 
-		Car ferrari = new Car(4, 4, "red", false, false, 200);
+		Car ferrari = new Car(4, 4, "red", true, false, 200);
+		System.out.println(ferrari.fixCarVehicleCost());
 		
 		
 	}
