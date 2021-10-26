@@ -7,13 +7,15 @@
   
   <properties>
     <junit.version>4.12</junit.version>
+    <maven.compiler.source>16</maven.compiler.source>
+	<maven.compiler.target>16</maven.compiler.target>
 </properties>
   
   <dependencies>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>${junit.version}</version>
         <scope>test</scope>
     </dependency>
 </dependencies>
@@ -27,7 +29,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.qa.main.Runner</mainClass>
+                        <mainClass>com.qa.main.Main</mainClass>
                     </manifest>
                 </archive>
             </configuration>
