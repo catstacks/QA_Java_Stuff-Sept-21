@@ -3,4 +3,37 @@
   <groupId>com.qa.garage</groupId>
   <artifactId>GarageMVN</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <junit.version>4.12</junit.version>
+    <maven.compiler.source>16</maven.compiler.source>
+	<maven.compiler.target>16</maven.compiler.target>
+</properties>
+  
+  <dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.qa.main.Main</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+  
 </project>
