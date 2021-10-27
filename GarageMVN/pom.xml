@@ -28,7 +28,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.qa.main.Main</mainClass>
+                        <mainClass>com.qa.main.Runner</mainClass>
                     </manifest>
                 </archive>
             </configuration>
