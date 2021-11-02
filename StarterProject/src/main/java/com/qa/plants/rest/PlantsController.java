@@ -24,17 +24,34 @@ import org.springframework.web.bind.annotation.RestController;
 public class PlantsController {
 	private List<Plants> plantBuds = new ArrayList<>();
 	
-	@GetMapping("/greenHouse/{id}")
+	@GetMapping("/hello") // listen for a request at /hello
+	public String hello() {
+		return "Hello, World!"; // sends response
+	}
 	
+	
+	@GetMapping("/greenHouse/{id}")	
 	public Plants getPlants(@PathVariable Integer id) {
 		return this.plantBuds.get(id);
 	
 	}
 	
+	@PostMapping("/create") // triggered by a POST request to /create
+	public ResponseEntity<Plants> createPlant(@RequestBody Plants newPlantBuds) {
+		this.plantBuds.add(newPlantBuds);
+		Plants responseBody = this.plantBuds.get(this.plantBuds.size() - 1);
+		return new ResponseEntity<Plants>(responseBody, HttpStatus.CREATED);
+	}
+	
+	@GetMapping("/get/{id}") 
+	public Plants getPlant(@PathVariable Integer id) {
+		return this.plantBuds.get(id);
+	}
+	
 	@PutMapping("/replace/{id}")
-	public ResponseEntity<Plants> replacePlant(@PathVariable Integer id, @RequestBody Plants newPlant) {
-
-		System.out.println("Replacing plant with id " + id + " with " + newPlant);
+	public ResponseEntity<Plants> replacePlant(@PathVariable Integer id, @RequestBody Plants newPlantBuds) {
+		
+		System.out.println("Replacing plant with id " + id + " with " + newPlantBuds);
 		return null;
 	}
 
