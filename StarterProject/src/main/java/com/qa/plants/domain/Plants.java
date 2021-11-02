@@ -41,6 +41,11 @@ public class Plants {
 		this.hasBugs = hasBugs;
 	}
 	
+	@Override
+	public String toString() {
+		return "Plant properties are as follows [name=" + name + ", age=" + ageInYears + ", hasBugs?=" + hasBugs + "]";
+	}
+	
 	
 
 }
