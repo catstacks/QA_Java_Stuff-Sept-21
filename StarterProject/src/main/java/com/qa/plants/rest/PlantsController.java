@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PlantsController {
 	private List<Plants> plantBuds = new ArrayList<>();
 	
+	
 	@GetMapping("/hello") // listen for a request at /hello
 	public String hello() {
 		return "Hello, World!"; // sends response
