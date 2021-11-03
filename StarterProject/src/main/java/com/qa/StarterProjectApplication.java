@@ -12,9 +12,9 @@ public class StarterProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StarterProjectApplication.class, args);
-		Plants Herb1 = new Plants("Mint", 1, true);
-		Plants Herb2 = new Plants("Thyme",3, true);
-		Plants Herb3 = new Plants("Basil", 3, true);
+//		Plants Herb1 = new Plants("Mint", 1, true);
+//		Plants Herb2 = new Plants("Thyme",3, true);
+//		Plants Herb3 = new Plants("Basil", 3, true);
 
 		
 	}

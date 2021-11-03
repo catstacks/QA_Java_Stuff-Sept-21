@@ -44,10 +44,10 @@ public class PlantsController {
 		return new ResponseEntity<Plants>(responseBody, HttpStatus.CREATED);
 	}
 	
-	@GetMapping("/get/{id}") 
-	public Plants getPlant(@PathVariable Integer id) {
-		return this.plantBuds.get(id);
-	}
+//	@GetMapping("/get/{id}") 
+//	public Plants getPlant(@PathVariable Integer id) {
+//		return this.plantBuds.get(id);
+//	}
 	
 	@PutMapping("/replace/{id}")
 	public ResponseEntity<Plants> replacePlant(@PathVariable Integer id, @RequestBody Plants newPlantBuds) {
