@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.qa.plants.domain.Plants;
 
+@Service
 public class PlantSeviceDB implements PlantService {
 
 	@Override

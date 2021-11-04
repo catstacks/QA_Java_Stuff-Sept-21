@@ -1,6 +1,7 @@
 package com.qa.plants.rest;
 
 import com.qa.plants.domain.Plants;
+import com.qa.plants.service.PlantService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class PlantsController {
 	private List<Plants> plantBuds = new ArrayList<>();
 	
+	private PlantService service;
 	
+	public PlantsController(PlantService service) {
+		super();
+		this.service = service;
+	}
+
+
 	@GetMapping("/hello") // listen for a request at /hello
 	public String hello() {
 		return "Hello, World!"; // sends response
