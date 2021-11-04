@@ -32,7 +32,6 @@ public class PlantServiceDB2 implements PlantService {
 
 		@Override
 		public Plants getPlants(Integer id) {
-//			return this.repo.findById(id).orElseThrow(() -> new EntityNotFoundException("No puppy found with id: " + id));
 			Optional<Plants> plantOptional = this.repo.findById(id);
 
 			if (plantOptional.isPresent()) {

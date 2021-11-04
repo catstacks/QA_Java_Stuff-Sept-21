@@ -5,12 +5,12 @@ import org.springframework.stereotype.Repository;
 
 import com.qa.plants.domain.Plants;
 
-public class PlantRepoDB {
+
 
 	@Repository
-	public interface PlantRepo extends JpaRepository<Plants, Integer> {
+	public interface PlantRepoDB extends JpaRepository<Plants, Integer> {
 
 	}
 
 
-}
+
