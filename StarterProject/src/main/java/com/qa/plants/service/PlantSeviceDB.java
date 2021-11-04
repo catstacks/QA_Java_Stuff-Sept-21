@@ -15,7 +15,7 @@ public class PlantSeviceDB implements PlantService {
 		return null;
 	}
 	
-	public void patchPuppy() {
+	public void patchPlant() {
 
 	}
 
