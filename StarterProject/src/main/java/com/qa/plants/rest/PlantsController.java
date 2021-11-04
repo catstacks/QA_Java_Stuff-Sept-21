@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//Create - GET
-//Read - POST
+//Create - POST
+//Read - GET
 //Update - PUT, PATCH
 //Delete - DELETE
 
