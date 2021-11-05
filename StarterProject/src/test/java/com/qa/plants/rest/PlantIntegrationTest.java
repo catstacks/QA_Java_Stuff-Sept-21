@@ -24,7 +24,7 @@ import com.qa.plants.domain.Plants;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@Sql(scripts = { "classpath:plants-schema.sql",
+@Sql(scripts = {"classpath:plants-schema.sql",
 "classpath:plants-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 
 public class PlantIntegrationTest {

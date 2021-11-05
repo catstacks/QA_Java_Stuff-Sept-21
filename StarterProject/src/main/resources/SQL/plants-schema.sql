@@ -3,8 +3,8 @@ create table
 	`plants` 
 (
 	id integer AUTO_INCREMENT, 
-	name varchar(255), 
-	ageInYears integer not null, 
-	hasBugs varchar(255), 
+	name VARCHAR(255), 
+	ageInYears integer NOT NULL, 
+	hasBugs boolean NOT NULL, 
 	primary key (id)
 );
