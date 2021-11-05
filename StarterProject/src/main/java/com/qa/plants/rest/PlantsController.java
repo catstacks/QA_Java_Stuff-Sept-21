@@ -1,6 +1,7 @@
 package com.qa.plants.rest;
 
 import com.qa.plants.domain.Plants;
+
 import com.qa.plants.service.PlantService;
 
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 //Create - POST
@@ -22,7 +24,9 @@ import org.springframework.web.bind.annotation.RestController;
 //Delete - DELETE
 
 @RestController
+@RequestMapping(value = "/plants")
 public class PlantsController {
+	
 	private List<Plants> plantBuds = new ArrayList<>();
 	
 	private PlantService service;
@@ -52,6 +56,10 @@ public class PlantsController {
 		return new ResponseEntity<Plants>(responseBody, HttpStatus.CREATED);
 	}
 	
+	@GetMapping("/getAll")
+	public ResponseEntity<List<Plants>> getPlants() {
+		return ResponseEntity.ok(this.service.getALLPlants()); // unnecessary due to default being 200 anyway
+	}
 //	@GetMapping("/get/{id}") 
 //	public Plants getPlant(@PathVariable Integer id) {
 //		return this.plantBuds.get(id);
